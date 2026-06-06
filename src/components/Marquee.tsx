@@ -4,7 +4,7 @@ const items = [
   'Premium Craftsmanship',
   'Book a Styling Session',
   'New Arrivals Weekly',
-  'Proudly Founded by Nonhlanhla',
+  'Proudly Founded by Nonhlanhla Hlongwane',
   'Secure Checkout',
   'Free Returns Within 14 Days',
 ];

@@ -5,11 +5,11 @@ import { Award, Heart, Users, Target, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 const milestones = [
-  { year: '2019', title: 'The Dream Begins',       desc: 'Nonhlanhla sketched her first bag design in a notebook while working a corporate job in Sandton. The idea of a proudly South African luxury brand was born.' },
+  { year: '2019', title: 'The Dream Begins',       desc: 'Nonhlanhla Hlongwane sketched her first bag design in a notebook while working a corporate job in Sandton. The idea of a proudly South African luxury brand was born.' },
   { year: '2020', title: 'First Collection',        desc: 'Hand-stitched and self-funded, the debut Sassy collection of 12 bags sold out in under a week via Instagram, with orders coming from across Johannesburg.' },
   { year: '2021', title: 'Pop-Up Success',          desc: 'A pop-up at Sandton City attracted queues stretching around the corner. Sassy Bags was featured in Destiny Magazine as a brand to watch.' },
-  { year: '2022', title: 'National Expansion',      desc: 'Retail partnerships across Johannesburg, Cape Town, and Durban. A small team of five women joined Nonhlanhla to manage growing demand.' },
-  { year: '2023', title: 'Brand Summit Launch',     desc: 'Nonhlanhla hosted the first-ever Sassy Brand Summit — a community event empowering women entrepreneurs across South Africa.' },
+  { year: '2022', title: 'National Expansion',      desc: 'Retail partnerships across Johannesburg, Cape Town, and Durban. A small team of five women joined Nonhlanhla Hlongwane to manage growing demand.' },
+  { year: '2023', title: 'Brand Summit Launch',     desc: 'Nonhlanhla Hlongwane hosted the first-ever Sassy Brand Summit — a community event empowering women entrepreneurs across South Africa.' },
   { year: '2024', title: 'Digital Flagship Store',  desc: 'Launch of the full e-commerce platform bringing Sassy Bags to customers across South Africa and into neighbouring countries.' },
 ];
 
@@ -64,11 +64,11 @@ export default function AboutPage() {
                 className="text-5xl font-bold text-primary mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-cormorant)' }}
               >
-                Meet Nonhlanhla
+                Meet Nonhlanhla Hlongwane
               </h2>
               <div className="space-y-5 text-gray-600 leading-relaxed text-base">
                 <p>
-                  Nonhlanhla grew up in KwaZulu-Natal, the eldest daughter of a seamstress mother who taught her that craftsmanship is a form of love. From an early age she was drawn to the elegance of leather goods — the way a well-made bag could transform an entire outfit and how it made a woman feel.
+                  Nonhlanhla Hlongwane grew up in KwaZulu-Natal, the eldest daughter of a seamstress mother who taught her that craftsmanship is a form of love. From an early age she was drawn to the elegance of leather goods — the way a well-made bag could transform an entire outfit and how it made a woman feel.
                 </p>
                 <p>
                   After completing a business degree and spending six years in corporate finance in Johannesburg, she left her career to build something of her own. With a modest starting budget and a clear vision, she launched Sassy Bags from a spare room in Soweto in 2019.
@@ -77,13 +77,13 @@ export default function AboutPage() {
                   "I wanted to create a brand that looked like us — African women who are ambitious, stylish, and refuse to be invisible," she says. "Luxury should not have a gate. Every woman who works hard deserves to carry something beautiful."
                 </p>
                 <p>
-                  Today Nonhlanhla leads a team of 14 women, runs the Sassy Brand Summit annually, and is working toward her first international stockist partnership in London.
+                  Today Nonhlanhla Hlongwane leads a team of 14 women, runs the Sassy Brand Summit annually, and is working toward her first international stockist partnership in London.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-3">
                 <div className="w-12 h-px bg-accent-pink" />
                 <p className="text-accent-pink font-medium italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
-                  Nonhlanhla — Founder and Creative Director
+                  Nonhlanhla Hlongwane — Founder and Creative Director
                 </p>
               </div>
             </motion.div>
@@ -184,13 +184,13 @@ export default function AboutPage() {
                 The Sassy Brand Summit
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Every year Nonhlanhla hosts the Sassy Brand Summit — a full-day event bringing together women entrepreneurs, fashion professionals, and brand builders from across South Africa.
+                Every year Nonhlanhla Hlongwane hosts the Sassy Brand Summit — a full-day event bringing together women entrepreneurs, fashion professionals, and brand builders from across South Africa.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
                 The summit covers personal branding, starting a fashion business, digital marketing, and building sustainable revenue. Attendance is free for first-time entrepreneurs.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                "If I had someone show me the path when I was starting out, I would have gotten here twice as fast," says Nonhlanhla. "The Summit is that path for other women."
+                "If I had someone show me the path when I was starting out, I would have gotten here twice as fast," says Nonhlanhla Hlongwane. "The Summit is that path for other women."
               </p>
               <div className="mt-8">
                 <Link href="/contact">

@@ -186,7 +186,7 @@ export default function Home() {
               to carry luxury she could be proud of — made by one of her own.
             </p>
             <p className="text-[#C9A87A] tracking-[0.25em] text-[11px] uppercase font-semibold">
-              Nonhlanhla · Founder, Sassy Bags
+              Nonhlanhla Hlongwane · Founder, Sassy Bags
             </p>
           </motion.div>
         </div>

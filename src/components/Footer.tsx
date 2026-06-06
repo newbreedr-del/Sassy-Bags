@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <img src="/images/logo/sassy-logo-white.png" alt="Sassy" className="h-10 w-auto mb-5" />
             <p className="text-[#EDE0C8]/50 text-sm leading-relaxed mb-5">
-              South African luxury accessories by Nonhlanhla — crafted for the modern woman who dares to stand out.
+              South African luxury accessories by Nonhlanhla Hlongwane — crafted for the modern woman who dares to stand out.
             </p>
             <div className="flex gap-2.5">
               {[
@@ -85,7 +85,7 @@ export default function Footer() {
             <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#8A7A5A] mb-4">Contact</p>
             <ul className="space-y-3.5">
               {[
-                { icon: Mail,   lines: ['hello@sassybags.co.za', 'support@sassybags.co.za'] },
+                { icon: Mail,   lines: ['Nonhlanhla@sassy.co.za', 'hello@sassybags.co.za'] },
                 { icon: Phone,  lines: ['+27 11 784 3200', 'Mon – Fri, 9am – 5pm'] },
                 { icon: MapPin, lines: ['Shop 45, Sandton City', 'Johannesburg  ·  Cape Town  ·  Durban'] },
               ].map(({ icon: Icon, lines }, i) => (
@@ -110,7 +110,7 @@ export default function Footer() {
           <p className="text-[11px]">
             <span className="text-[#EDE0C8]/25">Founded by</span>
             <span className="text-[#C9A87A] mx-1.5" style={{ fontFamily: 'var(--font-cormorant)', fontSize: '14px' }}>
-              Nonhlanhla
+              Nonhlanhla Hlongwane
             </span>
             <span className="text-[#EDE0C8]/25">· South Africa</span>
           </p>

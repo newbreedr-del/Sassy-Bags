@@ -54,7 +54,7 @@ export default function ContactPage() {
           >
             {/* Info cards */}
             {[
-              { icon: Mail,  label: 'Email Us',     lines: ['hello@sassybags.co.za', 'support@sassybags.co.za'] },
+              { icon: Mail,  label: 'Email Us',     lines: ['Nonhlanhla@sassy.co.za', 'hello@sassybags.co.za'] },
               { icon: Phone, label: 'Call Us',       lines: ['+27 11 784 3200', 'Mon to Fri, 9am to 5pm'] },
               { icon: MapPin,label: 'Flagship Store',lines: ['Shop 45, Sandton City', 'Sandton, Johannesburg, 2196'] },
             ].map((item, i) => (
