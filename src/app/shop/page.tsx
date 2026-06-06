@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Search } from 'lucide-react';
+import Image from 'next/image';
 
 type Product = {
   id: number;
@@ -128,10 +129,11 @@ export default function ShopPage() {
                 className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="relative h-64 overflow-hidden bg-gray-50">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                   <div className="absolute top-3 left-3">

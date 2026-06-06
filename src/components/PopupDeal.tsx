@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Tag } from 'lucide-react';
+import Image from 'next/image';
 
 export default function PopupDeal() {
   const [visible, setVisible] = useState(false);
@@ -53,10 +54,11 @@ export default function PopupDeal() {
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
               {/* Top image strip */}
               <div className="relative h-40 overflow-hidden">
-                <img
+                <Image
                   src="/images/bags/pexels-kowalievska-1381562.jpg"
                   alt="Sassy Bags offer"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/70" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">

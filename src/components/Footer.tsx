@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 const shop = [
@@ -32,7 +33,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <img src="/images/logo/sassy-logo-white.png" alt="Sassy" className="h-10 w-auto mb-5" />
+            <Image src="/images/logo/sassy-logo-white.png" alt="Sassy" width={120} height={40} className="h-10 w-auto mb-5" />
             <p className="text-[#EDE0C8]/50 text-sm leading-relaxed mb-5">
               South African luxury accessories by Nonhlanhla Hlongwane — crafted for the modern woman who dares to stand out.
             </p>

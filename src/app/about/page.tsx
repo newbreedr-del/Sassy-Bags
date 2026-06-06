@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Award, Heart, Users, Target, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const milestones = [
   { year: '2019', title: 'The Dream Begins',       desc: 'Nonhlanhla Hlongwane sketched her first bag design in a notebook while working a corporate job in Sandton. The idea of a proudly South African luxury brand was born.' },
@@ -27,10 +28,11 @@ export default function AboutPage() {
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className="relative h-[70vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/about/store-interior.png"
             alt="Sassy Bags flagship store"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         </div>
@@ -74,7 +76,7 @@ export default function AboutPage() {
                   After completing a business degree and spending six years in corporate finance in Johannesburg, she left her career to build something of her own. With a modest starting budget and a clear vision, she launched Sassy Bags from a spare room in Soweto in 2019.
                 </p>
                 <p>
-                  "I wanted to create a brand that looked like us — African women who are ambitious, stylish, and refuse to be invisible," she says. "Luxury should not have a gate. Every woman who works hard deserves to carry something beautiful."
+                  &ldquo;I wanted to create a brand that looked like us — African women who are ambitious, stylish, and refuse to be invisible,&rdquo; she says. &ldquo;Luxury should not have a gate. Every woman who works hard deserves to carry something beautiful.&rdquo;
                 </p>
                 <p>
                   Today Nonhlanhla Hlongwane leads a team of 14 women, runs the Sassy Brand Summit annually, and is working toward her first international stockist partnership in London.
@@ -95,10 +97,11 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
-                <img
+                <Image
                   src="/images/bags/pexels-shvets-production-8410814.jpg"
                   alt="Sassy Bags craftsmanship"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-2xl shadow-xl w-44">
@@ -164,10 +167,11 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="order-2 lg:order-1 rounded-3xl overflow-hidden shadow-xl"
             >
-              <img
+              <Image
                 src="/images/about/about-hero.png"
                 alt="Sassy Brand Summit"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </motion.div>
             <motion.div
@@ -190,7 +194,7 @@ export default function AboutPage() {
                 The summit covers personal branding, starting a fashion business, digital marketing, and building sustainable revenue. Attendance is free for first-time entrepreneurs.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                "If I had someone show me the path when I was starting out, I would have gotten here twice as fast," says Nonhlanhla Hlongwane. "The Summit is that path for other women."
+                &ldquo;If I had someone show me the path when I was starting out, I would have gotten here twice as fast,&rdquo; says Nonhlanhla Hlongwane. &ldquo;The Summit is that path for other women.&rdquo;
               </p>
               <div className="mt-8">
                 <Link href="/contact">

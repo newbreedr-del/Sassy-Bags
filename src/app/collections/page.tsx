@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const collections = [
   {
@@ -87,10 +88,11 @@ export default function CollectionsPage() {
             >
               <Link href={col.href}>
                 <div className="relative h-80 rounded-3xl overflow-hidden mb-5 shadow-md group-hover:shadow-xl transition-shadow duration-300">
-                  <img
+                  <Image
                     src={col.image}
                     alt={col.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   {/* Dark overlay on hover */}
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
@@ -123,10 +125,11 @@ export default function CollectionsPage() {
           className="mt-20 rounded-3xl overflow-hidden relative"
         >
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/images/bags/pexels-shvets-production-8410814.jpg"
               alt="Signature Collection"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-primary/80" />
           </div>

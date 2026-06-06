@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const featured = [
@@ -124,9 +125,10 @@ export default function Home() {
                 className="bg-white rounded-xl overflow-hidden group"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={p.image} alt={p.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/12 transition-colors" />
                   <span className="absolute top-3 left-3 bg-[#1C1A16]/80 text-[#EDE0C8] text-[10px] font-semibold tracking-[0.1em] uppercase px-2.5 py-1 rounded-full">
@@ -177,7 +179,7 @@ export default function Home() {
             <p
               className="text-4xl text-[#C9A87A] mb-4 leading-none select-none"
               style={{ fontFamily: 'Georgia', fontSize: '56px' }}
-            >"</p>
+            >&ldquo;</p>
             <p
               className="text-xl md:text-2xl font-light leading-relaxed mb-6 italic text-[#EDE0C8]/90"
               style={{ fontFamily: 'var(--font-cormorant)' }}

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import ShoppingCart from './ShoppingCart';
 
@@ -40,9 +41,11 @@ export default function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
-              <img
+              <Image
                 src="/images/logo/sassy-logo-white.png"
                 alt="Sassy Luxury Hand Bags"
+                width={120}
+                height={36}
                 className="h-9 w-auto object-contain"
               />
             </Link>

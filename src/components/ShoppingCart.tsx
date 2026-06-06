@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Plus, Minus, Trash2, ShoppingBag } from 'lucide-react';
+import Image from 'next/image';
 
 interface CartItem {
   id: number;
@@ -83,9 +84,11 @@ export default function ShoppingCart({ isOpen, onClose }: { isOpen: boolean; onC
                       layout
                       className="flex gap-4 p-4 bg-gray-50 rounded-2xl"
                     >
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.name}
+                        width={96}
+                        height={96}
                         className="w-24 h-24 object-cover rounded-xl"
                       />
                       <div className="flex-1">
