@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${cormorant.variable} ${lato.variable} antialiased`}>
         <Header />
         <Marquee />
-        <div className="pt-16">
+        <div className="pt-[98px]">
           {children}
         </div>
         <Footer />
