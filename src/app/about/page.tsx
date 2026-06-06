@@ -36,7 +36,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 w-full">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
-            <p className="text-accent-pink tracking-[0.3em] uppercase text-xs font-medium mb-3">Our Story</p>
+            <p className="text-[#C9A87A] tracking-[0.3em] uppercase text-xs font-medium mb-3">Our Story</p>
             <h1
               className="text-6xl md:text-8xl font-bold text-white leading-none mb-4"
               style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -59,7 +59,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-accent-pink tracking-[0.25em] uppercase text-xs font-medium mb-4">The Founder</p>
+              <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-4">The Founder</p>
               <h2
                 className="text-5xl font-bold text-primary mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -81,8 +81,8 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-3">
-                <div className="w-12 h-px bg-accent-pink" />
-                <p className="text-accent-pink font-medium italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                <div className="w-12 h-px bg-[#C9A87A]" />
+                <p className="text-[#C9A87A] font-medium italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Nonhlanhla Hlongwane — Founder and Creative Director
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 <p className="text-4xl font-bold" style={{ fontFamily: 'var(--font-cormorant)' }}>5+</p>
                 <p className="text-sm text-gray-300 mt-1">Years of luxury craftsmanship</p>
               </div>
-              <div className="absolute -top-6 -right-6 bg-accent-pink text-white p-6 rounded-2xl shadow-xl w-44">
+              <div className="absolute -top-6 -right-6 bg-[#C9A87A] text-white p-6 rounded-2xl shadow-xl w-44">
                 <p className="text-4xl font-bold" style={{ fontFamily: 'var(--font-cormorant)' }}>14</p>
                 <p className="text-sm text-white/80 mt-1">Women on the Sassy team</p>
               </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <p className="text-accent-pink tracking-[0.25em] uppercase text-xs font-medium mb-3">What We Stand For</p>
+            <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-3">What We Stand For</p>
             <h2
               className="text-5xl font-bold text-primary"
               style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -176,7 +176,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="order-1 lg:order-2"
             >
-              <p className="text-accent-pink tracking-[0.25em] uppercase text-xs font-medium mb-4">Community</p>
+              <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-4">Community</p>
               <h2
                 className="text-5xl font-bold text-primary mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -213,7 +213,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <p className="text-accent-pink tracking-[0.25em] uppercase text-xs font-medium mb-3">Our Journey</p>
+            <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-3">Our Journey</p>
             <h2
               className="text-5xl font-bold text-primary"
               style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -240,7 +240,7 @@ export default function AboutPage() {
                   </div>
                   {/* Content */}
                   <div className={`flex-1 bg-white rounded-2xl p-6 shadow-sm md:w-5/12 ${i % 2 === 0 ? 'md:ml-0 md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                    <p className="text-accent-pink text-xs font-semibold tracking-widest mb-1">{m.year}</p>
+                    <p className="text-[#C9A87A] text-xs font-semibold tracking-widest mb-1">{m.year}</p>
                     <h3 className="text-lg font-bold text-primary mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
                       {m.title}
                     </h3>
@@ -262,7 +262,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <p className="text-accent-pink tracking-[0.25em] uppercase text-xs font-medium mb-3">Find Us</p>
+            <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-3">Find Us</p>
             <h2
               className="text-5xl font-bold text-primary"
               style={{ fontFamily: 'var(--font-cormorant)' }}
@@ -286,7 +286,7 @@ export default function AboutPage() {
                 className="border border-gray-100 rounded-2xl p-7 hover:shadow-md transition-shadow relative"
               >
                 {loc.flagship && (
-                  <span className="absolute top-4 right-4 bg-accent-pink text-white text-xs px-2 py-1 rounded-full font-semibold">
+                  <span className="absolute top-4 right-4 bg-[#C9A87A] text-white text-xs px-2 py-1 rounded-full font-semibold">
                     Flagship
                   </span>
                 )}
@@ -330,7 +330,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/shop">
-                <button className="bg-accent-pink text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-pink-600 transition-colors">
+                <button className="bg-[#C9A87A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#8A7A5A] transition-colors">
                   Shop Now
                 </button>
               </Link>
