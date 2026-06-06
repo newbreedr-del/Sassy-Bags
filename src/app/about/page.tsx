@@ -340,4 +340,13 @@ export default function AboutPage() {
               </Link>
               <Link href="/contact">
                 <button className="border border-white/40 text-white px-8 py-4 rounded-full font-medium text-base hover:bg-white/10 transition-colors">
- 
+                  Contact Us
+                </button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -146,4 +146,8 @@ export default function CollectionsPage() {
               </button>
             </Link>
           </div>
-  
+        </motion.div>
+      </div>
+    </main>
+  );
+}

@@ -176,4 +176,9 @@ export default function ShopPage() {
         {cart.length > 0 && (
           <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium z-40">
             {cart.length} item{cart.length !== 1 ? 's' : ''} in cart
-          </div
+          </div>
+        )}
+      </div>
+    </main>
+  );
+}

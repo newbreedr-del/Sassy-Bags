@@ -137,4 +137,8 @@ export default function PopupDeal() {
               </div>
             </div>
           </motion.div>
-        
+        </>
+      )}
+    </AnimatePresence>
+  );
+}
