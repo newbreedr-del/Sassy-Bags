@@ -33,7 +33,9 @@ export default function RootLayout({
       <body className={`${cormorant.variable} ${lato.variable} antialiased`}>
         <Header />
         <Marquee />
-        {children}
+        <div className="pt-16">
+          {children}
+        </div>
         <Footer />
         <PopupDeal />
       </body>
