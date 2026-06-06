@@ -165,7 +165,7 @@ export default function AboutPage() {
               className="order-2 lg:order-1 rounded-3xl overflow-hidden shadow-xl"
             >
               <img
-                src="/images/about/brand-summit.png"
+                src="/images/about/about-hero.png"
                 alt="Sassy Brand Summit"
                 className="w-full h-full object-cover"
               />
