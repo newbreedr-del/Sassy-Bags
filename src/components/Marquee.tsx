@@ -13,7 +13,7 @@ export default function Marquee() {
   const doubled = [...items, ...items];
 
   return (
-    <div className="bg-[#EDE0C8] overflow-hidden flex-shrink-0 relative z-40" style={{ height: '34px' }}>
+    <div className="mt-16 bg-[#EDE0C8] overflow-hidden flex-shrink-0 relative z-40" style={{ height: '34px' }}>
       <div
         className="flex items-center h-full animate-marquee whitespace-nowrap"
         style={{ width: 'max-content' }}

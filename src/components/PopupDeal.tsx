@@ -43,14 +43,15 @@ export default function PopupDeal() {
             className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100]"
           />
 
-          {/* Popup */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.92, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.92, y: 20 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 260 }}
-            className="fixed z-[101] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-md"
-          >
+          {/* Popup — centering wrapper avoids conflicts between Tailwind translate classes and Framer Motion's transform animations */}
+          <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.92, y: 20 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 260 }}
+              className="pointer-events-auto w-full max-w-md"
+            >
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
               {/* Top image strip */}
               <div className="relative h-40 overflow-hidden">
@@ -136,7 +137,8 @@ export default function PopupDeal() {
                 )}
               </div>
             </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </>
       )}
     </AnimatePresence>

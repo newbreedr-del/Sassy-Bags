@@ -29,13 +29,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${cormorant.variable} ${lato.variable} antialiased`}>
         <Header />
         <Marquee />
-        <div className="pt-[98px]">
-          {children}
-        </div>
+        {children}
         <Footer />
         <PopupDeal />
       </body>

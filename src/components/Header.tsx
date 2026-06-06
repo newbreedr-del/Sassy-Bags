@@ -91,8 +91,8 @@ export default function Header() {
                 )}
               </button>
 
-              <Link href="/shop" className="hidden md:block">
-                <button className="bg-[#EDE0C8] text-[#1C1A16] px-5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.08em] uppercase hover:bg-[#C9A87A] transition-colors ml-1">
+              <Link href="/shop">
+                <button className="bg-[#EDE0C8] text-[#1C1A16] px-3.5 sm:px-5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold tracking-[0.08em] uppercase hover:bg-[#C9A87A] transition-colors ml-1 whitespace-nowrap">
                   Shop Now
                 </button>
               </Link>

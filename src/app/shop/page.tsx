@@ -149,7 +149,7 @@ export default function ShopPage() {
                   </h3>
                   <div className="flex items-center justify-between mt-2">
                     <p className="text-lg font-bold text-primary">
-                      R{product.price.toLocaleString()}
+                      R{product.price.toLocaleString('en-US')}
                     </p>
                     <button
                       onClick={() => addToCart(product)}
