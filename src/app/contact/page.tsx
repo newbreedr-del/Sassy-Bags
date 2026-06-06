@@ -22,18 +22,18 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen pt-24 pb-20 bg-white">
+    <main className="min-h-screen pb-12 md:pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-12 pt-6 md:pt-8"
         >
           <p className="text-accent-pink tracking-[0.3em] uppercase text-xs font-medium mb-3">We Would Love to Hear from You</p>
           <h1
-            className="text-6xl md:text-7xl font-bold text-primary mb-4"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-3"
             style={{ fontFamily: 'var(--font-cormorant)' }}
           >
             Get in Touch
@@ -44,7 +44,7 @@ export default function ContactPage() {
         </motion.div>
 
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-10 mb-10 md:mb-16">
 
           {/* LEFT — Contact Info */}
           <motion.div
@@ -122,10 +122,10 @@ export default function ContactPage() {
             className="lg:col-span-3"
           >
             {/* Tabs */}
-            <div className="flex gap-2 mb-8">
+            <div className="flex flex-col sm:flex-row gap-2 mb-6">
               <button
                 onClick={() => setTab('message')}
-                className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all ${
+                className={`flex items-center justify-center gap-2 px-4 py-2.5 rounded-full font-medium text-sm transition-all ${
                   tab === 'message' ? 'bg-primary text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
@@ -133,7 +133,7 @@ export default function ContactPage() {
               </button>
               <button
                 onClick={() => setTab('booking')}
-                className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all ${
+                className={`flex items-center justify-center gap-2 px-4 py-2.5 rounded-full font-medium text-sm transition-all ${
                   tab === 'booking' ? 'bg-primary text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
@@ -141,7 +141,7 @@ export default function ContactPage() {
               </button>
             </div>
 
-            <div className="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm">
+            <div className="bg-white border border-gray-100 rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-sm">
               {/* MESSAGE TAB */}
               {tab === 'message' && (
                 msgSent ? (
@@ -307,7 +307,7 @@ export default function ContactPage() {
           <iframe
             title="Sassy Bags location"
             src="https://www.openstreetmap.org/export/embed.html?bbox=28.0467%2C-26.1176%2C28.0667%2C-26.0976&amp;layer=mapnik&amp;marker=-26.1076%2C28.0567"
-            className="w-full h-80 border-0"
+            className="w-full h-56 sm:h-64 md:h-80 border-0"
             loading="lazy"
           />
           <div className="bg-gray-50 px-6 py-3 border-t border-gray-100">
@@ -325,3 +325,4 @@ export default function ContactPage() {
     </main>
   );
 }
+ 

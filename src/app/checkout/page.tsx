@@ -33,11 +33,11 @@ export default function CheckoutPage() {
   };
 
   return (
-    <main className="min-h-screen pt-24 pb-20 bg-gray-50">
+    <main className="min-h-screen pb-12 md:pb-16 bg-gray-50">
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Progress Steps */}
-        <div className="flex items-center justify-center mb-12">
+        <div className="flex items-center justify-center mb-8 pt-6 md:pt-10">
           {steps.map((s, index) => (
             <div key={s.id} className="flex items-center">
               <div className="flex flex-col items-center">

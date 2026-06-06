@@ -16,7 +16,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen" style={{ paddingTop: '68px' }}>
+<main className="min-h-screen">
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#1C1A16]">
@@ -51,12 +51,12 @@ export default function Home() {
               Luxury Accessories · South Africa
             </p>
             <h1
-              className="text-[88px] md:text-[120px] font-bold text-[#EDE0C8] leading-none mb-4"
+              className="text-[48px] sm:text-[68px] md:text-[88px] lg:text-[120px] font-bold text-[#EDE0C8] leading-none mb-4"
               style={{ fontFamily: 'var(--font-cormorant)' }}
             >
               Sassy
             </h1>
-            <p className="text-[#EDE0C8]/60 text-lg md:text-xl font-light tracking-[0.12em] mb-10">
+            <p className="text-[#EDE0C8]/60 text-base md:text-xl font-light tracking-[0.08em] md:tracking-[0.12em] mb-8 md:mb-10">
               Luxury Hand Bags &amp; Accessories
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED COLLECTION ───────────────────────────────────── */}
-      <section className="py-20 bg-[#F5F0E8]">
+      <section className="py-10 md:py-16 lg:py-20 bg-[#F5F0E8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -165,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* ── FOUNDER QUOTE ─────────────────────────────────────────── */}
-      <section className="py-16 bg-[#1C1A16] relative overflow-hidden">
+      <section className="py-10 md:py-16 bg-[#1C1A16] relative overflow-hidden">
         <div className="absolute inset-0 dot-grid" />
         {/* Circles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -195,7 +195,7 @@ export default function Home() {
       </section>
 
       {/* ── NEWSLETTER ────────────────────────────────────────────── */}
-      <section className="py-16 bg-[#F5F0E8]">
+      <section className="py-10 md:py-16 bg-[#F5F0E8]">
         <div className="max-w-xl mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <p className="text-[#8A7A5A] tracking-[0.28em] uppercase text-[10px] font-semibold mb-3">
@@ -230,3 +230,4 @@ export default function Home() {
     </main>
   );
 }
+                                                                         

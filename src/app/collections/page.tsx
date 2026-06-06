@@ -58,16 +58,16 @@ const collections = [
 
 export default function CollectionsPage() {
   return (
-    <main className="min-h-screen pt-24 pb-20">
+    <main className="min-h-screen pb-12 md:pb-16">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-10 pt-6 md:pt-8"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3">
             Our Collections
           </h1>
           <p className="text-xl text-gray-500 max-w-xl mx-auto">
@@ -87,7 +87,7 @@ export default function CollectionsPage() {
               className="group"
             >
               <Link href={col.href}>
-                <div className="relative h-80 rounded-3xl overflow-hidden mb-5 shadow-md group-hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-52 sm:h-64 md:h-80 rounded-2xl md:rounded-3xl overflow-hidden mb-4 shadow-md group-hover:shadow-xl transition-shadow duration-300">
                   <Image
                     src={col.image}
                     alt={col.name}
@@ -122,7 +122,7 @@ export default function CollectionsPage() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 rounded-3xl overflow-hidden relative"
+          className="mt-10 md:mt-16 rounded-2xl md:rounded-3xl overflow-hidden relative"
         >
           <div className="absolute inset-0">
             <Image
@@ -133,8 +133,8 @@ export default function CollectionsPage() {
             />
             <div className="absolute inset-0 bg-primary/80" />
           </div>
-          <div className="relative z-10 p-12 md:p-20 text-center text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="relative z-10 p-8 md:p-16 lg:p-20 text-center text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
               The Sassy Signature
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -146,8 +146,4 @@ export default function CollectionsPage() {
               </button>
             </Link>
           </div>
-        </motion.div>
-      </div>
-    </main>
-  );
-}
+  

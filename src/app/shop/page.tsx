@@ -70,16 +70,16 @@ export default function ShopPage() {
   };
 
   return (
-    <main className="min-h-screen pt-24 pb-20">
+    <main className="min-h-screen pb-12 md:pb-16">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-8 pt-6 md:pt-8"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-3">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-2">
             Shop Our Collection
           </h1>
           <p className="text-gray-500 text-lg">
@@ -88,7 +88,7 @@ export default function ShopPage() {
         </motion.div>
 
         {/* Filters + Search */}
-        <div className="flex flex-col md:flex-row gap-4 mb-10 items-start md:items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-3 mb-6 md:mb-8 items-start md:items-center justify-between">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
@@ -119,7 +119,7 @@ export default function ShopPage() {
 
         {/* Products Grid */}
         {filtered.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {filtered.map((product, index) => (
               <motion.div
                 key={product.id}
@@ -128,7 +128,7 @@ export default function ShopPage() {
                 transition={{ delay: index * 0.05 }}
                 className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="relative h-64 overflow-hidden bg-gray-50">
+                <div className="relative h-44 sm:h-52 md:h-64 overflow-hidden bg-gray-50">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -176,9 +176,4 @@ export default function ShopPage() {
         {cart.length > 0 && (
           <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium z-40">
             {cart.length} item{cart.length !== 1 ? 's' : ''} in cart
-          </div>
-        )}
-      </div>
-    </main>
-  );
-}
+          </div

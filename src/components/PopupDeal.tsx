@@ -49,7 +49,7 @@ export default function PopupDeal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.92, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 260 }}
-            className="fixed z-[101] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md mx-4"
+            className="fixed z-[101] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-md"
           >
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
               {/* Top image strip */}
@@ -137,8 +137,4 @@ export default function PopupDeal() {
               </div>
             </div>
           </motion.div>
-        </>
-      )}
-    </AnimatePresence>
-  );
-}
+        

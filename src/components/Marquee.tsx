@@ -13,7 +13,8 @@ export default function Marquee() {
   const doubled = [...items, ...items];
 
   return (
-    <div className="bg-[#EDE0C8] overflow-hidden" style={{ height: '34px' }}>
+    /* mt-16 clears the fixed 64px header so the marquee sits just below it */
+    <div className="mt-16 bg-[#EDE0C8] overflow-hidden flex-shrink-0" style={{ height: '34px' }}>
       <div
         className="flex items-center h-full animate-marquee whitespace-nowrap"
         style={{ width: 'max-content' }}
@@ -21,12 +22,9 @@ export default function Marquee() {
         {doubled.map((item, i) => (
           <span
             key={i}
-            className="inline-flex items-center gap-2 px-7 text-[11px] font-semibold tracking-[0.14em] uppercase text-[#1C1A16]"
+            className="inline-flex items-center gap-2 px-6 text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] uppercase text-[#1C1A16]"
           >
-            <span
-              className="inline-block w-1 h-1 rounded-full bg-[#8A7A5A] flex-shrink-0"
-              aria-hidden="true"
-            />
+            <span className="inline-block w-1 h-1 rounded-full bg-[#8A7A5A] flex-shrink-0" aria-hidden="true" />
             {item}
           </span>
         ))}

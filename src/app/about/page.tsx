@@ -26,7 +26,7 @@ export default function AboutPage() {
     <main className="min-h-screen">
 
       {/* ── HERO ──────────────────────────────────────────── */}
-      <section className="relative h-[70vh] flex items-end overflow-hidden">
+      <section className="relative h-[55vh] sm:h-[65vh] md:h-[70vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/about/store-interior.png"
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <p className="text-[#C9A87A] tracking-[0.3em] uppercase text-xs font-medium mb-3">Our Story</p>
             <h1
-              className="text-6xl md:text-8xl font-bold text-white leading-none mb-4"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-none mb-4"
               style={{ fontFamily: 'var(--font-cormorant)' }}
             >
               Born Sassy.<br />Built to Last.
@@ -53,9 +53,9 @@ export default function AboutPage() {
       </section>
 
       {/* ── FOUNDER STORY ─────────────────────────────────── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ export default function AboutPage() {
             >
               <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-4">The Founder</p>
               <h2
-                className="text-5xl font-bold text-primary mb-6 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-cormorant)' }}
               >
                 Meet Nonhlanhla Hlongwane
@@ -104,11 +104,11 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-2xl shadow-xl w-44">
+              <div className="hidden sm:block absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-2xl shadow-xl w-44">
                 <p className="text-4xl font-bold" style={{ fontFamily: 'var(--font-cormorant)' }}>5+</p>
                 <p className="text-sm text-gray-300 mt-1">Years of luxury craftsmanship</p>
               </div>
-              <div className="absolute -top-6 -right-6 bg-[#C9A87A] text-white p-6 rounded-2xl shadow-xl w-44">
+              <div className="hidden sm:block absolute -top-6 -right-6 bg-[#C9A87A] text-white p-6 rounded-2xl shadow-xl w-44">
                 <p className="text-4xl font-bold" style={{ fontFamily: 'var(--font-cormorant)' }}>14</p>
                 <p className="text-sm text-white/80 mt-1">Women on the Sassy team</p>
               </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── VALUES ────────────────────────────────────────── */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 md:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -134,7 +134,7 @@ export default function AboutPage() {
               Our Values
             </h2>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={i}
@@ -158,9 +158,9 @@ export default function AboutPage() {
       </section>
 
       {/* ── BRAND SUMMIT ──────────────────────────────────── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -182,7 +182,7 @@ export default function AboutPage() {
             >
               <p className="text-[#C9A87A] tracking-[0.25em] uppercase text-xs font-medium mb-4">Community</p>
               <h2
-                className="text-5xl font-bold text-primary mb-6 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 leading-tight"
                 style={{ fontFamily: 'var(--font-cormorant)' }}
               >
                 The Sassy Brand Summit
@@ -209,7 +209,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── TIMELINE ──────────────────────────────────────── */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 md:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -228,7 +228,7 @@ export default function AboutPage() {
 
           <div className="relative">
             <div className="absolute left-16 md:left-1/2 top-0 bottom-0 w-px bg-gray-200" />
-            <div className="space-y-10">
+            <div className="space-y-6 md:space-y-10">
               {milestones.map((m, i) => (
                 <motion.div
                   key={i}
@@ -258,7 +258,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── LOCATIONS ─────────────────────────────────────── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -275,7 +275,7 @@ export default function AboutPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {[
               { city: 'Johannesburg', address: 'Shop 45, Sandton City\nSandton, 2196', hours: 'Mon-Sat: 9am-7pm\nSun: 10am-5pm', flagship: true },
               { city: 'Cape Town',    address: 'Unit 12, V&A Waterfront\nCape Town, 8001',  hours: 'Mon-Sat: 9am-6pm\nSun: 10am-4pm', flagship: false },
@@ -316,7 +316,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────── */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-12 md:py-20 bg-primary text-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -340,13 +340,4 @@ export default function AboutPage() {
               </Link>
               <Link href="/contact">
                 <button className="border border-white/40 text-white px-8 py-4 rounded-full font-medium text-base hover:bg-white/10 transition-colors">
-                  Contact Us
-                </button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    </main>
-  );
-}
+ 
